@@ -11,8 +11,8 @@
 		2226FE7B1D885D620070578A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2226FE7A1D885D620070578A /* Assets.xcassets */; };
 		2226FE7E1D885D620070578A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2226FE7C1D885D620070578A /* LaunchScreen.storyboard */; };
 		37C609571D88741E0086ECE1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6094E1D88741E0086ECE1 /* Character.swift */; };
-		37C609581D88741E0086ECE1 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37C609501D88741E0086ECE1 /* TestView.xib */; };
-		37C609591D88741E0086ECE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C609511D88741E0086ECE1 /* ViewController.swift */; };
+		37C609581D88741E0086ECE1 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37C609501D88741E0086ECE1 /* HomeView.xib */; };
+		37C609591D88741E0086ECE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C609511D88741E0086ECE1 /* HomeViewController.swift */; };
 		37C6095A1D88741F0086ECE1 /* Excalibur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C609531D88741E0086ECE1 /* Excalibur.swift */; };
 		37C6095B1D88741F0086ECE1 /* Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C609541D88741E0086ECE1 /* Gun.swift */; };
 		37C6095C1D88741F0086ECE1 /* IWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C609551D88741E0086ECE1 /* IWeapon.swift */; };
@@ -26,8 +26,8 @@
 		2226FE7D1D885D620070578A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2226FE7F1D885D620070578A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37C6094E1D88741E0086ECE1 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
-		37C609501D88741E0086ECE1 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
-		37C609511D88741E0086ECE1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37C609501D88741E0086ECE1 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		37C609511D88741E0086ECE1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		37C609531D88741E0086ECE1 /* Excalibur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Excalibur.swift; sourceTree = "<group>"; };
 		37C609541D88741E0086ECE1 /* Gun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gun.swift; sourceTree = "<group>"; };
 		37C609551D88741E0086ECE1 /* IWeapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWeapon.swift; sourceTree = "<group>"; };
@@ -86,8 +86,8 @@
 		37C6094F1D88741E0086ECE1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				37C609501D88741E0086ECE1 /* TestView.xib */,
-				37C609511D88741E0086ECE1 /* ViewController.swift */,
+				37C609501D88741E0086ECE1 /* HomeView.xib */,
+				37C609511D88741E0086ECE1 /* HomeViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C609581D88741E0086ECE1 /* TestView.xib in Resources */,
+				37C609581D88741E0086ECE1 /* HomeView.xib in Resources */,
 				2226FE7E1D885D620070578A /* LaunchScreen.storyboard in Resources */,
 				2226FE7B1D885D620070578A /* Assets.xcassets in Resources */,
 			);
@@ -175,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2226FE741D885D620070578A /* AppDelegate.swift in Sources */,
-				37C609591D88741E0086ECE1 /* ViewController.swift in Sources */,
+				37C609591D88741E0086ECE1 /* HomeViewController.swift in Sources */,
 				37C6095A1D88741F0086ECE1 /* Excalibur.swift in Sources */,
 				37C6095B1D88741F0086ECE1 /* Gun.swift in Sources */,
 				37C609571D88741E0086ECE1 /* Character.swift in Sources */,
