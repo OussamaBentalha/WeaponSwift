@@ -30,7 +30,7 @@ class Character: NSObject {
         let damage = Double(self.weapon.damage()) * 1.13;
         let random = Int(arc4random_uniform(100) + 0);
         if random < self.hitChance {
-            user.health -= Int(damage);
+            user.protect(Int(damage));
         }
     }
 }
