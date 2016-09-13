@@ -17,6 +17,12 @@
 		37C6095B1D88741F0086ECE1 /* Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C609541D88741E0086ECE1 /* Gun.swift */; };
 		37C6095C1D88741F0086ECE1 /* IWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C609551D88741E0086ECE1 /* IWeapon.swift */; };
 		37C6095D1D88741F0086ECE1 /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C609561D88741E0086ECE1 /* Sword.swift */; };
+		37C609601D8875180086ECE1 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6095E1D8875180086ECE1 /* CharacterListViewController.swift */; };
+		37C609611D8875180086ECE1 /* CharacterListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37C6095F1D8875180086ECE1 /* CharacterListViewController.xib */; };
+		37C609641D88752E0086ECE1 /* CharacterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C609621D88752E0086ECE1 /* CharacterFormViewController.swift */; };
+		37C609651D88752E0086ECE1 /* CharacterFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37C609631D88752E0086ECE1 /* CharacterFormViewController.xib */; };
+		37C609681D88756B0086ECE1 /* WeaponListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C609661D88756B0086ECE1 /* WeaponListViewController.swift */; };
+		37C609691D88756B0086ECE1 /* WeaponListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37C609671D88756B0086ECE1 /* WeaponListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		37C609541D88741E0086ECE1 /* Gun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gun.swift; sourceTree = "<group>"; };
 		37C609551D88741E0086ECE1 /* IWeapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWeapon.swift; sourceTree = "<group>"; };
 		37C609561D88741E0086ECE1 /* Sword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
+		37C6095E1D8875180086ECE1 /* CharacterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
+		37C6095F1D8875180086ECE1 /* CharacterListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterListViewController.xib; sourceTree = "<group>"; };
+		37C609621D88752E0086ECE1 /* CharacterFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterFormViewController.swift; sourceTree = "<group>"; };
+		37C609631D88752E0086ECE1 /* CharacterFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterFormViewController.xib; sourceTree = "<group>"; };
+		37C609661D88756B0086ECE1 /* WeaponListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponListViewController.swift; sourceTree = "<group>"; };
+		37C609671D88756B0086ECE1 /* WeaponListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeaponListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,12 @@
 			children = (
 				37C609501D88741E0086ECE1 /* HomeView.xib */,
 				37C609511D88741E0086ECE1 /* HomeViewController.swift */,
+				37C6095E1D8875180086ECE1 /* CharacterListViewController.swift */,
+				37C6095F1D8875180086ECE1 /* CharacterListViewController.xib */,
+				37C609621D88752E0086ECE1 /* CharacterFormViewController.swift */,
+				37C609631D88752E0086ECE1 /* CharacterFormViewController.xib */,
+				37C609661D88756B0086ECE1 /* WeaponListViewController.swift */,
+				37C609671D88756B0086ECE1 /* WeaponListViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,8 +179,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C609611D8875180086ECE1 /* CharacterListViewController.xib in Resources */,
 				37C609581D88741E0086ECE1 /* HomeView.xib in Resources */,
+				37C609691D88756B0086ECE1 /* WeaponListViewController.xib in Resources */,
 				2226FE7E1D885D620070578A /* LaunchScreen.storyboard in Resources */,
+				37C609651D88752E0086ECE1 /* CharacterFormViewController.xib in Resources */,
 				2226FE7B1D885D620070578A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,7 +199,10 @@
 				37C609591D88741E0086ECE1 /* HomeViewController.swift in Sources */,
 				37C6095A1D88741F0086ECE1 /* Excalibur.swift in Sources */,
 				37C6095B1D88741F0086ECE1 /* Gun.swift in Sources */,
+				37C609681D88756B0086ECE1 /* WeaponListViewController.swift in Sources */,
+				37C609601D8875180086ECE1 /* CharacterListViewController.swift in Sources */,
 				37C609571D88741E0086ECE1 /* Character.swift in Sources */,
+				37C609641D88752E0086ECE1 /* CharacterFormViewController.swift in Sources */,
 				37C6095D1D88741F0086ECE1 /* Sword.swift in Sources */,
 				37C6095C1D88741F0086ECE1 /* IWeapon.swift in Sources */,
 			);
