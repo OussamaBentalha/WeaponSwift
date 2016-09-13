@@ -13,7 +13,4 @@ public class Excalibur: Sword{
     public override func bonus() -> Int {
         return (self.weight / self.year) * Int(1.30)
     }
-    
-    
-    
 }

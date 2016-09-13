@@ -62,16 +62,16 @@
 		2226FE721D885D620070578A /* GameWeapon */ = {
 			isa = PBXGroup;
 			children = (
-				2226FE8B1D886A210070578A /* Excalibur.swift */,
-				2226FE8C1D886A210070578A /* Sword.swift */,
 				2226FE731D885D620070578A /* AppDelegate.swift */,
-				2226FE751D885D620070578A /* ViewController.swift */,
 				2226FE7A1D885D620070578A /* Assets.xcassets */,
-				2226FE7C1D885D620070578A /* LaunchScreen.storyboard */,
+				37C609491D88684B0086ECE1 /* Character.swift */,
+				2226FE8B1D886A210070578A /* Excalibur.swift */,
+				37C609471D8861C40086ECE1 /* Gun.swift */,
 				2226FE7F1D885D620070578A /* Info.plist */,
 				2226FE851D885DB60070578A /* IWeapon.swift */,
-				37C609471D8861C40086ECE1 /* Gun.swift */,
-				37C609491D88684B0086ECE1 /* Character.swift */,
+				2226FE7C1D885D620070578A /* LaunchScreen.storyboard */,
+				2226FE8C1D886A210070578A /* Sword.swift */,
+				2226FE751D885D620070578A /* ViewController.swift */,
 			);
 			path = GameWeapon;
 			sourceTree = "<group>";
