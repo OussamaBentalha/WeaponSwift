@@ -12,6 +12,8 @@
 		2226FE7B1D885D620070578A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2226FE7A1D885D620070578A /* Assets.xcassets */; };
 		2226FE7E1D885D620070578A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2226FE7C1D885D620070578A /* LaunchScreen.storyboard */; };
 		2226FE861D885DB60070578A /* IWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226FE851D885DB60070578A /* IWeapon.swift */; };
+		2226FE881D8860EC0070578A /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226FE871D8860EC0070578A /* Sword.swift */; };
+		2226FE8A1D8868140070578A /* Excalibur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226FE891D8868140070578A /* Excalibur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2226FE7D1D885D620070578A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2226FE7F1D885D620070578A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2226FE851D885DB60070578A /* IWeapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWeapon.swift; sourceTree = "<group>"; };
+		2226FE871D8860EC0070578A /* Sword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
+		2226FE891D8868140070578A /* Excalibur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Excalibur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				2226FE7C1D885D620070578A /* LaunchScreen.storyboard */,
 				2226FE7F1D885D620070578A /* Info.plist */,
 				2226FE851D885DB60070578A /* IWeapon.swift */,
+				2226FE871D8860EC0070578A /* Sword.swift */,
+				2226FE891D8868140070578A /* Excalibur.swift */,
 			);
 			path = GameWeapon;
 			sourceTree = "<group>";
@@ -134,7 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2226FE8A1D8868140070578A /* Excalibur.swift in Sources */,
 				2226FE761D885D620070578A /* ViewController.swift in Sources */,
+				2226FE881D8860EC0070578A /* Sword.swift in Sources */,
 				2226FE741D885D620070578A /* AppDelegate.swift in Sources */,
 				2226FE861D885DB60070578A /* IWeapon.swift in Sources */,
 			);
