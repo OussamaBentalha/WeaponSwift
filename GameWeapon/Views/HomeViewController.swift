@@ -24,5 +24,10 @@ class HomeViewController: UIViewController {
         mario.attack(luigi);
         luigi.attack(mario)
     }
+    
+    @IBAction func chooseCharacter(sender: UIButton) {
+        let viewController: CharacterListViewController = CharacterListViewController();
+        self.navigationController?.pushViewController(viewController, animated: true);
+    }
 }
 

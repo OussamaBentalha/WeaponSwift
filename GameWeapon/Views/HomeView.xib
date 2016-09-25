@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="GameWeapon" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="GameWeapon" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="iN0-l3-epB" id="ZxM-NN-ITd"/>
             </connections>
@@ -14,7 +14,24 @@
         <view contentMode="scaleToFill" restorationIdentifier="ViewController" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yv-Jg-aE2">
+                    <rect key="frame" x="264" y="570" width="73" height="30"/>
+                    <state key="normal" title="Combattre"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDQ-Ng-gNa">
+                    <rect key="frame" x="223" y="285" width="154" height="30"/>
+                    <state key="normal" title="Choisir un personnage"/>
+                    <connections>
+                        <action selector="chooseCharacter:" destination="-1" eventType="touchUpInside" id="M7o-ly-zJS"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GDQ-Ng-gNa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xMd-Zc-UBH"/>
+                <constraint firstItem="GDQ-Ng-gNa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zI3-qW-1vo"/>
+            </constraints>
         </view>
     </objects>
 </document>
