@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeaponListViewController: UIViewController {
+class WeaponListViewController: GWDefaultViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

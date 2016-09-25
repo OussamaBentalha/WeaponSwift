@@ -10,6 +10,7 @@
 		2226FE741D885D620070578A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226FE731D885D620070578A /* AppDelegate.swift */; };
 		2226FE7B1D885D620070578A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2226FE7A1D885D620070578A /* Assets.xcassets */; };
 		2226FE7E1D885D620070578A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2226FE7C1D885D620070578A /* LaunchScreen.storyboard */; };
+		375608561D9826E000650E48 /* GWDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375608551D9826E000650E48 /* GWDefaultViewController.swift */; };
 		37C609571D88741E0086ECE1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6094E1D88741E0086ECE1 /* Character.swift */; };
 		37C609581D88741E0086ECE1 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37C609501D88741E0086ECE1 /* HomeView.xib */; };
 		37C609591D88741E0086ECE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C609511D88741E0086ECE1 /* HomeViewController.swift */; };
@@ -31,6 +32,7 @@
 		2226FE7A1D885D620070578A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2226FE7D1D885D620070578A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2226FE7F1D885D620070578A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375608551D9826E000650E48 /* GWDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWDefaultViewController.swift; sourceTree = "<group>"; };
 		37C6094E1D88741E0086ECE1 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		37C609501D88741E0086ECE1 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		37C609511D88741E0086ECE1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				37C609631D88752E0086ECE1 /* CharacterFormViewController.xib */,
 				37C609661D88756B0086ECE1 /* WeaponListViewController.swift */,
 				37C609671D88756B0086ECE1 /* WeaponListViewController.xib */,
+				375608551D9826E000650E48 /* GWDefaultViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2226FE741D885D620070578A /* AppDelegate.swift in Sources */,
+				375608561D9826E000650E48 /* GWDefaultViewController.swift in Sources */,
 				37C609591D88741E0086ECE1 /* HomeViewController.swift in Sources */,
 				37C6095A1D88741F0086ECE1 /* Excalibur.swift in Sources */,
 				37C6095B1D88741F0086ECE1 /* Gun.swift in Sources */,

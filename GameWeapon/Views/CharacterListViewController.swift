@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CharacterListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CharacterListViewController: GWDefaultViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var charactersTableView: UITableView!
     
@@ -23,20 +23,13 @@ class CharacterListViewController: UIViewController, UITableViewDelegate, UITabl
         
         self.title = "Characters";
         
-        if let navigationController = self.navigationController {
-            if let topItem = navigationController.navigationBar.topItem {
-                let backButton: UIBarButtonItem = UIBarButtonItem();
-                backButton.title = "";
-                topItem.backBarButtonItem = backButton;
-            }
-        }
-        
         let addButton:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(CharacterListViewController.addCharacter));
         self.navigationItem.rightBarButtonItems = [addButton];
     }
     
     func addCharacter() -> Void {
-        print("addCharacter -- +++\n");
+        let formView:CharacterFormViewController = CharacterFormViewController();
+        self.navigationController?.pushViewController(formView, animated: true);
     }
     
     func initTableView() -> Void {

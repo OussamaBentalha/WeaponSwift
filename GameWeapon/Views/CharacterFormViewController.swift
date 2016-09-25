@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CharacterFormViewController: UIViewController {
+class CharacterFormViewController: GWDefaultViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
