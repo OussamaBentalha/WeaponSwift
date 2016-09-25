@@ -18,7 +18,7 @@ class Character: NSObject {
     init(name: String, weapon: IWeapon, health: Int) {
         self.name = name;
         self.weapon = weapon;
-        self.health = health > 25000 ? health : 25000;
+        self.health = health < 25000 ? health : 10000;
         self.hitChance = Int(arc4random_uniform(70) + 50);
     }
     
