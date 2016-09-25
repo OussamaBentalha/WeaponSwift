@@ -25,6 +25,8 @@ class CharacterListViewController: GWDefaultViewController, UITableViewDelegate,
         
         let addButton:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(CharacterListViewController.addCharacter));
         self.navigationItem.rightBarButtonItems = [addButton];
+        
+        self.initTableView();
     }
     
     func addCharacter() -> Void {
