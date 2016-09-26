@@ -12,6 +12,8 @@ class CharacterListViewController: GWDefaultViewController, UITableViewDelegate,
 
     @IBOutlet weak var charactersTableView: UITableView!
     
+    let cellId:String = "CharacterCell"
+    
     var characters:[Character]!
     
     var characterManager: CharacterManager!
@@ -22,9 +24,7 @@ class CharacterListViewController: GWDefaultViewController, UITableViewDelegate,
         self.characterManager = CharacterManager.SharedManager;
         
         if characters == nil {
-            let gun:Gun = Gun(name: "Gun", height: 12, width: 12, weight: 90, price: 100, bullets: 888);
-            let mario:Character = Character(name: "Mario", weapon: gun, health: 90000);
-            self.characters = [mario];
+            self.characters = [];
         }
         
         self.title = "Characters";
@@ -35,12 +35,21 @@ class CharacterListViewController: GWDefaultViewController, UITableViewDelegate,
         self.initTableView();
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated);
+        self.characters = self.characterManager.characters;
+        self.charactersTableView.reloadData();
+    }
+    
     func addCharacter() -> Void {
         let formView:CharacterFormViewController = CharacterFormViewController();
         self.navigationController?.pushViewController(formView, animated: true);
     }
     
     func initTableView() -> Void {
+        let nib:UINib = UINib(nibName: "CharacterTableViewCell", bundle: nil);
+        self.charactersTableView.registerNib(nib, forCellReuseIdentifier: cellId);
+        
         self.charactersTableView.dataSource = self;
         self.charactersTableView.delegate   = self;
     }
@@ -50,20 +59,12 @@ class CharacterListViewController: GWDefaultViewController, UITableViewDelegate,
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell();
+        let cell:CharacterTableViewCell = tableView.dequeueReusableCellWithIdentifier(cellId) as! CharacterTableViewCell;
+        
+        let character = self.characters[indexPath.row];
+        
+        cell.textLabel!.text = character.name;
+        
+        return cell;
     }
-    
-    func didReloadCharacterTable() {
-        self.characters = self.characterManager.characters;
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            self.charactersTableView.reloadData();
-        })
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated);
-        self.characters = self.characterManager.characters;
-        self.charactersTableView.reloadData();
-    }
-    
 }
