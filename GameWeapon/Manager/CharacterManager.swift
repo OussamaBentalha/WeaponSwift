@@ -20,6 +20,10 @@ class CharacterManager: NSObject {
     
     var characters:[Character] = [];
     
+    var first_player:Character! = nil;
+    var second_player:Character! = nil;
+    
+    
     func add(character:Character) -> Void {
         self.characters.append(character);
     }
@@ -50,5 +54,13 @@ class CharacterManager: NSObject {
         }
         
         return index;
+    }
+    
+    func setFirstPlayer(character:Character) -> Void {
+        self.first_player = character;
+    }
+    
+    func setSecondPlayer(character:Character) -> Void {
+        self.second_player = character;
     }
 }

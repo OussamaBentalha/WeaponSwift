@@ -13,12 +13,18 @@ class CharacterListViewController: GWDefaultViewController, UITableViewDelegate,
     @IBOutlet weak var charactersTableView: UITableView!
     
     var characters:[Character]!
+    
+    var characterManager: CharacterManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.characterManager = CharacterManager.SharedManager;
+        
         if characters == nil {
-            self.characters = [];
+            let gun:Gun = Gun(name: "Gun", height: 12, width: 12, weight: 90, price: 100, bullets: 888);
+            let mario:Character = Character(name: "Mario", weapon: gun, health: 90000);
+            self.characters = [mario];
         }
         
         self.title = "Characters";
@@ -46,4 +52,18 @@ class CharacterListViewController: GWDefaultViewController, UITableViewDelegate,
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         return UITableViewCell();
     }
+    
+    func didReloadCharacterTable() {
+        self.characters = self.characterManager.characters;
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            self.charactersTableView.reloadData();
+        })
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated);
+        self.characters = self.characterManager.characters;
+        self.charactersTableView.reloadData();
+    }
+    
 }

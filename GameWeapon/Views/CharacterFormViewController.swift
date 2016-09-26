@@ -83,7 +83,7 @@ class CharacterFormViewController: GWDefaultViewController, WeaponDelegate {
         
         let character:Character = Character(name: self.nameField.text!, weapon: self.weapon!, health: health);
         
-        if !self.characterManager.exist(character) {
+        if self.characterManager.exist(character) {
             print("This name already exist");
             return;
         }
