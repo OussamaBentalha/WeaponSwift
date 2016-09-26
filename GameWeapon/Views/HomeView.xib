@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="GameWeapon" customModuleProvider="target">
             <connections>
+                <outlet property="labelResult" destination="ZOi-Xw-cJM" id="ysg-yq-3cy"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ZxM-NN-ITd"/>
             </connections>
         </placeholder>
@@ -15,22 +16,36 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yv-Jg-aE2">
-                    <rect key="frame" x="264" y="570" width="73" height="30"/>
-                    <state key="normal" title="Combattre"/>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDQ-Ng-gNa">
-                    <rect key="frame" x="223" y="285" width="154" height="30"/>
+                    <rect key="frame" x="223" y="100" width="154" height="30"/>
                     <state key="normal" title="Choisir un personnage"/>
                     <connections>
                         <action selector="chooseCharacter:" destination="-1" eventType="touchUpInside" id="M7o-ly-zJS"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Resultat" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOi-Xw-cJM">
+                    <rect key="frame" x="8" y="532.5" width="584" height="17.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yv-Jg-aE2">
+                    <rect key="frame" x="264" y="160" width="73" height="30"/>
+                    <state key="normal" title="Combattre"/>
+                    <connections>
+                        <action selector="fight:" destination="-1" eventType="touchUpInside" id="32V-Kw-jNO"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="GDQ-Ng-gNa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xMd-Zc-UBH"/>
-                <constraint firstItem="GDQ-Ng-gNa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zI3-qW-1vo"/>
+                <constraint firstItem="4Yv-Jg-aE2" firstAttribute="top" secondItem="GDQ-Ng-gNa" secondAttribute="bottom" constant="30" id="7ZU-en-vtU"/>
+                <constraint firstItem="ZOi-Xw-cJM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="L5U-Qe-bLw"/>
+                <constraint firstAttribute="bottom" secondItem="ZOi-Xw-cJM" secondAttribute="bottom" constant="50" id="agk-1K-UKq"/>
+                <constraint firstItem="GDQ-Ng-gNa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="fPh-nc-mfP"/>
+                <constraint firstItem="GDQ-Ng-gNa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fgD-kX-W4u"/>
+                <constraint firstItem="4Yv-Jg-aE2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hPH-KK-2Jd"/>
+                <constraint firstAttribute="trailing" secondItem="ZOi-Xw-cJM" secondAttribute="trailing" constant="8" id="xbL-pe-4MQ"/>
             </constraints>
         </view>
     </objects>
